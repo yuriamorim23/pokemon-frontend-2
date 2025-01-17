@@ -10,4 +10,4 @@ RUN npm run build
 
 EXPOSE 4200
 
-CMD ["npx", "http-server", "dist/pokemon-frontend", "-p", "4200"]
+CMD ["npx", "http-server", "dist/pokemon-frontend/browser", "-p", "4200"]
