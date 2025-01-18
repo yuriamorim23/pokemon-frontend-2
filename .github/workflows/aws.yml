@@ -56,4 +56,4 @@ jobs:
             
             docker rm -f pokemon-frontend || true
             
-            docker run -d --name pokemon-frontend -p 4200:4200 $REGISTRY/$IMAGE_NAME:latest
+            docker run -d --name pokemon-frontend -p 80:4200 $REGISTRY/$IMAGE_NAME:latest
