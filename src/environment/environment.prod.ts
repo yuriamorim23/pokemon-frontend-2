@@ -3,3 +3,4 @@ export const environment = {
     apiUrl: 'http://pokemon-backend:8080/api/v1/pokemon'
   };
   
+  
