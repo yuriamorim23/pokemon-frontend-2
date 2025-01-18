@@ -3,13 +3,18 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { PokemonResponse } from "../models/pokemon-response.model";
 import { GuessResponse } from "../models/guess-response.model";
+import { environment } from "../../environment/environment";
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PokemonService {
-  private apiUrl = 'http://localhost:8080/api/v1/pokemon';
+  // private apiUrl = 'http://localhost:8080/api/v1/pokemon';
+
+  private apiUrl = environment.apiUrl;
+
+  // private apiUrl = 'http://<AWS_EC2_IP>:8080/api/v1/pokemon';
 
   constructor(private http: HttpClient) {}
 
