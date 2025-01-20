@@ -21,7 +21,7 @@ describe('Pokemon Game - Cypress Tests', () => {
 
     it('Should display the answer options', () => {
         cy.contains('button', 'Start Game').click();
-        cy.get('.options button', { timeout: 10000 }).should('have.length', 3); // There should be 3 option buttons
+        cy.get('.options button', { timeout: 10000 }).should('have.length', 4); // There should be 3 option buttons
     });
 
     it('Should allow selecting an option and display the result', () => {
